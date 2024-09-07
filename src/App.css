@@ -1,29 +1,119 @@
-/* src/App.css */
-body {
-  font-family: Arial, sans-serif;
+/* Reset some default styles */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
   background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
 }
 
-h1, h2 {
-  color: #4a90e2;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
+/* Header styling */
 header {
   text-align: center;
-  padding: 50px;
+  padding: 60px 0;
+  background-color: #007ACC;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 20px;
 }
 
 section {
-  background: #fff;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin: 20px auto;
+  padding: 40px;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #007ACC;
+  padding-bottom: 10px;
+}
+
+p, ul {
+  font-size: 16px;
+  line-height: 1.8;
 }
 
 ul {
-  list-style-type: none;
-  padding: 0;
+  list-style: none;
+}
+
+ul li::before {
+  content: "•";
+  color: #007ACC;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+h3 {
+  font-size: 22px;
+  color: #007ACC;
+  margin-top: 20px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 40px 0;
+}
+
+/* Experience Section */
+.experience-container div {
+  margin-bottom: 30px;
+}
+
+.experience-container p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Add some spacing for mobile */
+@media (max-width: 768px) {
+  section {
+    width: 95%;
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 36px;
+  }
+
+  header p {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
 }
